@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Metadados básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Virtual</title>
+
     <!-- Favicons -->
+    <!-- Ícones variados para dispositivos e navegadores, proporcionando melhor integração com diferentes sistemas -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicons/apple-icon-72x72.png">
@@ -14,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
@@ -22,14 +25,144 @@
     <meta name="msapplication-TileColor" content="#FFC107">
     <meta name="msapplication-TileImage" content="./assets/images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#FFC107">
-    <!-- End Favicons -->
-     
-    <!-- Css -->
+    <!-- Fim dos favicons -->
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-   
-    <!-- Scripts -->
+
+    <!-- Cabeçalho principal -->
+    <header class="container-fluid">
+        <section class="container">
+            <article class="row">
+                <!-- Logotipo da loja -->
+                <a href="#" class="col-md-2">
+                    <img src="assets/images/logo.svg" alt="Logo empresa - Moda da Mulher">
+                </a>
+
+                <!-- Barra de pesquisa -->
+                <form action="#" class="col-md-7">
+                    <input type="text" name="procurar" placeholder="Procurar roupas">
+                    <button>
+                        <!-- Ícone SVG para busca -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Menu de navegação com login e carrinho -->
+                <ul class="col-md-3 nav">
+                    <li class="nav-item">
+                        <!-- Link para login com ícone de usuário -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+                            Entrar
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <!-- Link para o carrinho com ícone de notificação -->
+                        <span class="notificacao">3</span>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                            Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </header>
+
+    <!-- Navegação de produtos da loja -->
+    <nav class="container-fluid nav-produtos">
+    
+        <!-- Container principal da lista de produtos, responsivo ao layout da página -->
+        <section class="container">
+        
+            <!-- Menu de navegação principal dos produtos -->
+            <ul class="nav">
+            
+                <!-- Item de navegação: Categoria "Moda Feminina" -->
+                <li class="nav-item">
+                    <!-- Ícone para a categoria Moda Feminina -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    Moda Feminina
+                
+                    <!-- Sub-menu da categoria "Moda Feminina" -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">Lançamento</li>
+                        <li class="nav-item">Plus size</li>
+                        <li class="nav-item">Moda Praia</li>
+                        <li class="nav-item">Acessório</li>
+                        <li class="nav-item">Promoção</li>
+                    </ul>
+                    <!-- Fim do sub-menu da categoria "Moda Feminina" -->
+                
+                </li>
+                <!-- Fim do item de navegação: Categoria "Moda Feminina" -->
+
+                <!-- Item de navegação: Categoria "Calçados" -->
+                <li class="nav-item">
+                    <!-- Ícone para a categoria Calçados -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    Calçados
+                </li>
+                <!-- Fim do item de navegação: Categoria "Calçados" -->
+
+            </ul>
+            <!-- Fim do menu de navegação principal dos produtos -->
+
+        </section>
+        <!-- Fim do container principal da lista de produtos -->
+
+    </nav>
+    <!-- Fim da navegação de produtos da loja -->
+
+    <!-- Banner promocionais em formato de carousel -->
+    <section id="banners-promocionais" class="container carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Imagens dos banners promocionais -->
+        <article class="carousel-inner">
+
+          <figure class="carousel-item active">
+            <img src="./assets/images/banner-1.jpg" class="d-block w-100" alt="Banner Promocional de peças de roupa">
+          </figure>
+
+          <figure class="carousel-item">
+            <img src="./assets/images/banner-2.jpg" class="d-block w-100" alt="Banner Promocional diversos">
+          </figure>
+
+        </article>
+        <!-- End imagens dos banner promocionais -->
+
+        <!-- Button de anterior do carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#banners-promocionais" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <!-- End button de anterior do carousel -->
+
+        <!-- Button de proximo do carousel -->
+        <button class="carousel-control-next" type="button" data-bs-target="#banners-promocionais" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- End button de proximo do carousel -->
+
+    </section>
+    <!-- End banner promocionais em formato de carousel -->
+
+    <!-- Scripts JavaScript -->
+    <!-- Inclui bibliotecas JS como Bootstrap e Popper para funcionalidades e interatividade -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
