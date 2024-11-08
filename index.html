@@ -98,11 +98,13 @@
                 
                     <!-- Sub-menu da categoria "Moda Feminina" -->
                     <ul class="nav flex-column">
-                        <li class="nav-item">Lançamento</li>
-                        <li class="nav-item">Plus size</li>
-                        <li class="nav-item">Moda Praia</li>
-                        <li class="nav-item">Acessório</li>
-                        <li class="nav-item">Promoção</li>
+                        <li class="nav-item"><a href="#">Lançamento</a></li>
+                        <li class="nav-item"><a href="#">Plus size</a></li>
+                        <li class="nav-item"><a href="#">Moda Praia</a></li>
+                        <li class="nav-item"><a href="#">Acessório</a></li>
+                        <a href="">
+                            <li class="nav-item">Promoção</li>
+                        </a>
                     </ul>
                     <!-- Fim do sub-menu da categoria "Moda Feminina" -->
                 
@@ -157,33 +159,37 @@
         <!-- End banner promocionais em formato de carousel -->
 
         <!-- Banner promocional de parcelas e entrega para todo Brasil -->
-        <section class="container">
+        <section class="container banners-promocionais-statico">
             <!-- Rows do banner promocional -->
             <section class="row">
                 <!-- Conteudo de parcelas do banner promocional -->
                 <article class="col-md-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
-                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                    </svg>
-
-                    <p>
-                        Parcela em até <br> 
-                        <strong>12x sem juros</strong>
-                    </p>
+                    <div class="banners-promocionais-statico-12x d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg>
+    
+                        <p>
+                            Parcela em até <br> 
+                            <strong>12x sem juros</strong>
+                        </p>
+                    </div>
                 </article>
                 <!-- End conteudo de parcelas do banner promocional -->
 
                 <!-- Conteudo de entregas para todo o Brasil do banner promocional -->
                 <article class="col-md-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                      </svg>
-
-                      <p>
-                        Entrega para <br>
-                        <strong>todo Brasil</strong>
-                      </p>
+                    <div class="banners-promocionais-statico-todo-br d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+    
+                          <p>
+                            Entrega para <br>
+                            <strong>todo Brasil</strong>
+                          </p>
+                    </div>
                 </article>
                 <!-- End conteudo de entregas para todo o Brasil do banner promocional -->
             </section>
@@ -192,7 +198,7 @@
         <!-- End banner promocional de parcelas e entrega para todo Brasil -->
 
         <!-- Container dos produtos -->
-        <section class="container">
+        <section class="container produtos">
             <!-- Título dos produtos -->
             <h1 class="text-center">Mais Populares</h1>
 
@@ -200,7 +206,7 @@
             <div class="row">
 
                 <!-- Item do produto camiseta Cropped -->
-                <div class="produto-item col-md-3">
+                <a href="#" class="produto-container col-md-3">
 
                     <section class="produtos">
                         <img src="assets/images/cropped-rosa.jpg" class="img-fluid" alt="Cropped Rosa">
@@ -226,11 +232,11 @@
                         
                         <strong class="produtos-preco">R$59,90</strong>
                     </article>
-                </div>
+                </a href="#">
                 <!-- End item do produto camiseta Cropped -->
 
                 <!-- Item do produto Camiseta manga longa -->
-                <div class="produto-item col-md-3">
+                <a href="#" class="produto-container col-md-3">
 
                     <section class="produtos">
                         <img src="assets/images/camiseta-manga-comprida.jpg" class="img-fluid" alt="Camiseta Manga Comprida">
@@ -260,11 +266,11 @@
                         
                         <strong class="produtos-preco">R$79,90</strong>
                     </article>
-                </div>
+                </a href="#">
                 <!-- End item do produto Camiseta manga longa -->
 
                 <!-- Item do produto camiseta listrada -->
-                <div class="produto-item col-md-3">
+                <a href="#" class="produto-container col-md-3">
 
                     <section class="produtos">
                         <img src="assets/images/camiseta-listrada.jpg" class="img-fluid" alt="Camiseta listrada">
@@ -294,11 +300,11 @@
                         
                         <strong class="produtos-preco">R$49,90</strong>
                     </article>
-                </div>
+                </a href="#">
                 <!-- End item do produto camiseta listrada -->
 
                 <!-- Item do produto Saia Plisa -->
-                <div class="produto-item col-md-3">
+                <a href="#" class="produto-container col-md-3">
 
                     <section class="produtos">
                         <img src="assets/images/saia-plisada.jpg" class="img-fluid" alt="Sai Plisa">
@@ -328,7 +334,7 @@
                         
                         <strong class="produtos-preco">R$117,90</strong>
                     </article>
-                </div>
+                </a href="#">
                 <!-- End item do produto Saia Plisa -->
 
             </div>

@@ -2,6 +2,10 @@ nav.nav-produtos {
     background: $cor-secundaria;
     color: $branco;
 
+    a {
+        color: $branco;
+    }
+
     ul.nav {
 
         li {
