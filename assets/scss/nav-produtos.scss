@@ -38,7 +38,7 @@ nav.nav-produtos {
             }
 
             &:hover {
-                background: darken($color: $cor-secundaria, $amount: 10);
+                background: darken($color: $cor-secundaria, $amount: 30);
                 ul.nav {
                     display: block;
                 }
