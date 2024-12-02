@@ -180,12 +180,21 @@ footer ul li.ellipsis:hover::after {
   opacity: 1;
 }
 
+@media (max-width: 375px) {
+  .banners-promocionais-statico .banners-promocionais-statico-12x p,
+  .banners-promocionais-statico .banners-promocionais-statico-todo-br p {
+    font-size: 14px;
+  }
+}
 @media (max-width: 767px) {
   header section article a img {
     margin: 15px 0px;
   }
   header form {
     margin: 15px 0px;
+  }
+  header #banners-promocionais {
+    display: none;
   }
 }
 @media (max-width: 991px) {
