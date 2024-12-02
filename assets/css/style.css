@@ -180,6 +180,19 @@ footer ul li.ellipsis:hover::after {
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  header section article a img {
+    margin: 15px 0px;
+  }
+  header form {
+    margin: 15px 0px;
+  }
+}
+@media (max-width: 991px) {
+  header ul li {
+    margin: 7px 0px;
+  }
+}
 /*!
 * Bootstrap  v5.3.3 (https://getbootstrap.com/)
 * Copyright 2011-2024 The Bootstrap Authors
